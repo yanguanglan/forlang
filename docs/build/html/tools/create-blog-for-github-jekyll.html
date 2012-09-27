@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>学会用工具 &mdash; docsforlang 1.0 documentation</title>
+    <title>使用Github &amp; jekyll 写博客 &mdash; docsforlang 1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -27,8 +27,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="docsforlang 1.0 documentation" href="../index.html" />
-    <link rel="next" title="使用Sphinx生成文档" href="create-document-for-shpinx.html" />
-    <link rel="prev" title="写一本自己的书!" href="../index.html" /> 
+    <link rel="up" title="学会用工具" href="index.html" />
+    <link rel="prev" title="使用Sphinx生成文档" href="create-document-for-shpinx.html" /> 
   </head>
   <body>
     <div class="related">
@@ -39,11 +39,9 @@
              accesskey="I">index</a></li>
         <li class="right" >
           <a href="create-document-for-shpinx.html" title="使用Sphinx生成文档"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="../index.html" title="写一本自己的书!"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">docsforlang 1.0 documentation</a> &raquo;</li> 
+        <li><a href="../index.html">docsforlang 1.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">学会用工具</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -52,14 +50,35 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="id1">
-<h1>学会用工具<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="create-document-for-shpinx.html">使用Sphinx生成文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="create-blog-for-github-jekyll.html">使用Github &amp; jekyll 写博客</a></li>
-</ul>
+  <div class="section" id="github-jekyll">
+<h1>使用Github &amp; jekyll 写博客<a class="headerlink" href="#github-jekyll" title="Permalink to this headline">¶</a></h1>
+<p>这里以 windows xp 为例</p>
+<p>1 安装 ruby, 选择下载安装 <a class="reference external" href="http://rubyinstaller.org/downloads/">rubyinstaller</a> , 分别下载 最新版本（Ruby 1.9.3-p194），DEVELOPMENT KIT（DEVELOPMENT KIT）。</p>
+<p>Ruby 1.9.3-p194 直接点击安装，我这里安装在 C:Ruby193，DEVELOPMENT KIT 解压安装即可，我这里解压在 C:Devkit。</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nb">cd </span>C:<span class="se">\D</span>evkit
+ruby dk.rb init 初始化，找到ruby的安装目录
+ruby dk.rb review 确认ruby的安装目录
+ruby dk.rb install 安装ruby DEVKIT
+</pre></div>
 </div>
+<p>详细请看 <a class="reference external" href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">https://github.com/oneclick/rubyinstaller/wiki/Development-Kit</a></p>
+<p>2 安装 jekyll</p>
+<div class="highlight-bash"><div class="highlight"><pre>gem sources --remove http://rubygems.org/
+gem sources -a http://ruby.taobao.org/ 加入淘宝的源
+
+gem sources -l 查看源
+
+gem install jekyll 安装jekyll
+
+gem install rdiscount kramdown 安装 rdiscount kramdown 都是用于解析 markdown
+</pre></div>
+</div>
+<p>3 使用 <a class="reference external" href="http://jekyllbootstrap.com/">jekyllbootstrap</a> 向导</p>
+<dl class="docutils">
+<dt>4 更多连接</dt>
+<dd><a class="reference external" href="http://chen.yanping.me/cn/blog/2012/03/18/github-pages-step-by-step/">http://chen.yanping.me/cn/blog/2012/03/18/github-pages-step-by-step/</a>
+<a class="reference external" href="http://pages.github.com/">http://pages.github.com/</a></dd>
+</dl>
 </div>
 
 
@@ -69,14 +88,11 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../index.html"
-                        title="previous chapter">写一本自己的书!</a></p>
-  <h4>Next topic</h4>
   <p class="topless"><a href="create-document-for-shpinx.html"
-                        title="next chapter">使用Sphinx生成文档</a></p>
+                        title="previous chapter">使用Sphinx生成文档</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/tools/index.txt"
+    <li><a href="../_sources/tools/create-blog-for-github-jekyll.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -104,11 +120,9 @@
              >index</a></li>
         <li class="right" >
           <a href="create-document-for-shpinx.html" title="使用Sphinx生成文档"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="../index.html" title="写一本自己的书!"
              >previous</a> |</li>
-        <li><a href="../index.html">docsforlang 1.0 documentation</a> &raquo;</li> 
+        <li><a href="../index.html">docsforlang 1.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" >学会用工具</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

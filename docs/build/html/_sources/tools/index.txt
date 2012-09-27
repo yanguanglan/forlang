@@ -5,3 +5,4 @@
    :maxdepth: 1
 
    create-document-for-shpinx
+   create-blog-for-github-jekyll

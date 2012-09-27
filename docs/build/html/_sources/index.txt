@@ -10,7 +10,8 @@
 
     tools/index
     
-* :doc:`tools/create-document-for-shpinx`
+* :doc:`tools/create-document-for-shpinx`\
+* :doc:`tools/create-blog-for-github-jekyll`\
     
     
     
